@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="all_tasks">Todas las Tareas</string>
+    <string-array name="priority_options">
+        <item>Prioridad baja</item>
+        <item>Prioridad media</item>
+        <item>Prioridad alta</item>
+    </string-array>
+    <string-array name="priority_filters">
+        <item>Todos</item>
+        <item>Prioridad baja</item>
+        <item>Prioridad media</item>
+        <item>Prioridad alta</item>
+    </string-array>
+
+
+
+</resources>

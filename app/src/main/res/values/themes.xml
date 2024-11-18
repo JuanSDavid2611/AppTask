@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/Yellow</item>
+        <item name="colorPrimaryVariant">@color/Yellow</item>
+        <item name="android:statusBarColor">@color/Yellow</item>
+    </style>
+
+    <style name="Theme.MAD_Exam_04" parent="Theme.AppCompat.Light.DarkActionBar" />
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

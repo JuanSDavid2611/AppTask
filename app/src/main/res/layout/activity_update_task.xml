@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".UpdateTaskActivity">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/editTaskHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:text="Editar Tarea"
+        android:textColor="@color/Yellow"
+        android:textSize="24sp" />
+
+    <!-- Botón Guardar -->
+    <ImageView
+        android:id="@+id/updateSaveButton"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:layout_alignTop="@id/editTaskHeading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/baseline_add_task_24" />
+
+    <!-- Campo para el Título -->
+    <EditText
+        android:id="@+id/updateTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Ingresar Título De La Tarea"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/editTaskHeading"
+        android:background="@drawable/green_boarder"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <!-- Campo para la Descripción -->
+    <EditText
+        android:id="@+id/updateTaskContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresar Descripción De La Tarea"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/green_boarder"
+        android:layout_below="@id/updateTitleEditText"
+        android:layout_marginTop="12dp" />
+
+    <!-- Campo para la Fecha de Finalización -->
+    <EditText
+        android:id="@+id/updateCompletionDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Ingresar Fecha De Finalización"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateTaskContentEditText"
+        android:background="@drawable/green_boarder"
+        android:layout_marginTop="12dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+    <Spinner
+        android:id="@+id/uptadePrioritySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/updateCompletionDateEditText"
+        android:entries="@array/priority_options"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/green_boarder"/>
+
+
+
+</RelativeLayout>
